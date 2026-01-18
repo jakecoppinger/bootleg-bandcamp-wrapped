@@ -3,9 +3,11 @@ Bootleg Bandcamp Wrapped
 
 It's like Spotify wrapped but for Bandcamp instead! Share the albums you bought this year and see how much you paid artists!
 
+Deployed at https://bootlegbandcampwrapped.jakecoppinger.com
+
 This is a fork of Tom MacWright Val Town project. Make sure to read the [README.md](https://www.val.town/x/tmcw/bandcampWrapped/code/README.md) of the original, [read his blog post](https://macwright.com/2024/12/06/bandcamp-wrapped) and try the [original](https://tmcw-bandcampwrapped.web.val.run/).
 
-Note this is very much a weekend project and may has bugs.
+Note this is very much a weekend project and may has bugs! PRs welcome.
 
 # Setup
 
