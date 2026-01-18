@@ -1,0 +1,113 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/missing.css@1.1.3">
+    <style>
+        h1,h2,h3,h4 {
+            margin: 0;
+            padding: 0;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 10px;
+        } 
+
+        /* Display purchases in a grid of 2 columns */
+        .purchases {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.5em;
+            list-style: none;
+            font-size: 80%;
+            padding-left: 0;
+        }
+
+        .purchases li {
+            line-height: 1;
+            margin-bottom: 0.1em
+        }
+        </style>
+</head>
+<body>
+<title>Bootleg Bandcamp Wrapped 2025</title>
+<main>
+    <h1>Bootleg Bandcamp Wrapped 2025</h1>
+    <p><i>A fork of <a href="https://macwright.com/2024/12/06/bandcamp-wrapped">Tom MacWright</a>'s <i><a
+                href="https://tmcw-bandcampwrapped.web.val.run/">Bandcamp (unofficially) wrapped</a></i></p>
+    <h4>Intro</h4>
+    <p>
+        It's like Spotify wrapped but for <a href='https://bandcamp.com/'>Bandcamp</a>
+        instead! Share the albums you bought this year and see how much you paid artists!
+    </p>
+    <p>This demo is a fork of Tom MacWright's unofficial Bandcamp wrapped with some extra features. You may
+        like to try his version at <a
+            href="https://tmcw-bandcampwrapped.web.val.run/">https://tmcw-bandcampwrapped.web.val.run/</a> or read about
+        his project and (his music wrapped)
+        <a href='https://macwright.com/2024/12/06/bandcamp-wrapped'>on his blog!</a>
+    </p>
+
+    <h4>How to</h4>
+    <p>
+        Go to <a href="https://bandcamp.com/">Bandcamp</a>, click on your icon in the top right, and click
+        <a href='https://share.cleanshot.com/YnR3PzLW97Xwf1KNT9KW'>on the purchases</a>
+        item.
+        Scroll down and click 'View all ––– purchases' if you need to.
+        Scroll to the first purchase this year, and select all of the text
+        from that purchase to the top of the list, and hit copy.
+        Then paste into the textarea above.
+
+        This might be a little tricky, but just focus on, y'know, copying
+        the right content. Mouse down in the gap after the first album of 2025,
+        drag up till you're in the gap before the last album of 2025
+        and all the text in those albums is highlighted.
+    </p>
+
+    <p>Choose your currency</p>
+    <p>(Only AUD & USD hardcoded currently)</p>
+    <select id='currency-select'>
+        <option value=''>Select a currency</option>
+        <option value='AUD'>AUD</option>
+        <option value='USD'>USD</option>
+    </select>
+
+    <textarea id=droptarget contenteditable=true class='width:100%  ok bg color'
+        placeholder='Click here and hit cmd-v or otherwise paste your purchases here.'></textarea>
+    <p>Load example clipboard content:</p>
+    <button id='load-example-clipboard-content'>Load example clipboard content</button>
+
+    <br>
+    <h2 class="show-after-input" hidden>Bootleg Bandcamp Wrapped</h2>
+    <div id='html-spending'></div>
+    <div id='album-summary'></div>
+
+    <div class='box'>
+        <strong class="block titlebar">HTML preview</strong>
+        <br />
+        <div id='html-preview'></div>
+    </div>
+
+    <div class='box'>
+        <strong class="block titlebar">HTML output</strong>
+        <br />
+        <textarea id='html-output' hidden readonly class='width:100%'>Waiting for input…</textarea>
+    </div>
+
+    <div class='box'>
+        <strong class="block titlebar">Markdown output</strong>
+        <br />
+        <textarea id='markdown-output' hidden readonly class='width:100%'>Waiting for input…</textarea>
+    </div>
+
+    <h4>See Tom MacWright's observations on the ethics of buying music
+        <a href="https://tmcw-bandcampwrapped.web.val.run/#:~:text=Markdown%20output-,Notes,-I%20don%27t%20use">on
+            the original site</a>
+
+</main>
+
+<footer>
+    <a href="http://">TODO source on Github</a>
+</footer>
+
+<script type='module' src='./index.js'></script>
+</body>
+</html>
