@@ -20,13 +20,13 @@ export function generateCurrencyConversions({ targetCurrency }:
     } else if (targetCurrency === "USD") {
         return {
             "USD": 1.0,
-            "AUD": 1.5,
-            "GBP": 0.75,
-            "EUR": 0.86,
-            "CAD": 1.39,
-            "NZD": 1.74,
-            "JPY": 158.34,
-            "CZK": 20.92
+            "AUD": 0.67,
+            "GBP": 1.34,
+            "EUR": 1.16,
+            "CAD": 0.72,
+            "NZD": 0.58,
+            "JPY": 0.0063,
+            "CZK": 0.048
         }
     } else {
         throw new Error(`Currency not yet implemented`)
